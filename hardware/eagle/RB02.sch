@@ -2123,70 +2123,6 @@ Mfr no: 1776244-2 &lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="transistor-small-signal">
-<description>&lt;b&gt;Small Signal Transistors&lt;/b&gt;&lt;p&gt;
-Packages from :&lt;br&gt;
-www.infineon.com; &lt;br&gt;
-www.semiconductors.com;&lt;br&gt;
-www.irf.com&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SOT54A">
-<description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-0.9692" y1="2.2098" x2="0.9692" y2="2.2098" width="0.1524" layer="51" curve="-47.363718"/>
-<wire x1="-1.631" y1="-1.778" x2="-0.9689" y2="2.2098" width="0.1524" layer="21" curve="-113.782137"/>
-<wire x1="0.9689" y1="2.2098" x2="1.631" y2="-1.778" width="0.1524" layer="21" curve="-113.782137"/>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.1524" layer="21"/>
-<pad name="C" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="B" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="E" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="3.175" y="-1.905" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="3.175" y="0" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="NPN">
-<wire x1="2.54" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="2.032" y2="-2.032" width="0.1524" layer="94"/>
-<wire x1="2.032" y1="-2.032" x2="2.286" y2="-2.286" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.016" x2="2.286" y2="-2.286" width="0.1524" layer="94"/>
-<wire x1="2.286" y1="-2.286" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.286" y1="-2.286" x2="1.016" y2="-1.778" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="-1.778" x2="1.778" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="2.032" y1="-2.032" x2="1.778" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.778" y1="-1.27" x2="1.27" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.778" x2="2.032" y2="-2.032" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-1.778" x2="1.778" y2="-1.524" width="0.254" layer="94"/>
-<text x="5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="5.08" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.381" y1="-2.54" x2="0.381" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BC547" prefix="Q">
-<description>&lt;b&gt;NPN TRANSISTOR&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="NPN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT54A">
-<connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="relay">
 <description>&lt;b&gt;Relays&lt;/b&gt;&lt;p&gt;
 &lt;ul&gt;
@@ -2354,6 +2290,73 @@ Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="transistor">
+<description>&lt;b&gt;NPN Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="TO92">
+<description>&lt;b&gt;TO 92&lt;/b&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-2.6549" y2="-0.254" width="0.127" layer="21" curve="-32.78104"/>
+<wire x1="-2.6549" y1="-0.254" x2="-0.7863" y2="2.5485" width="0.127" layer="21" curve="-78.318477"/>
+<wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.127" layer="21" curve="-111.09954"/>
+<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-2.2537" y1="-0.254" x2="-0.2863" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="-2.6549" y1="-0.254" x2="-2.2537" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="-0.2863" y1="-0.254" x2="0.2863" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="2.2537" y1="-0.254" x2="2.6549" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="0.2863" y1="-0.254" x2="2.2537" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.127" layer="51" curve="-34.293591"/>
+<pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
+<pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
+<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
+<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
+</package>
+</packages>
+<symbols>
+<symbol name="NPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BC337" prefix="T">
+<description>&lt;b&gt;NPN TRANSISTOR&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO92">
+<connects>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2374,7 +2377,7 @@ Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="J2" library="dp_devices" deviceset="CON_TERMINAL_BLOCK_02" device="-5MM"/>
-<part name="Q1" library="transistor-small-signal" deviceset="BC547" device=""/>
+<part name="Q1" library="transistor" deviceset="BC337" device=""/>
 <part name="K1" library="relay" deviceset="JS-M1A*" device="" technology="-12V-5"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
@@ -2390,7 +2393,7 @@ Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
 <part name="R6" library="SparkFun" deviceset="RESISTOR" device="AXIAL-0.3" value="10K"/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="J4" library="dp_devices" deviceset="CON_TERMINAL_BLOCK_02" device="-5MM"/>
-<part name="Q2" library="transistor-small-signal" deviceset="BC547" device=""/>
+<part name="Q2" library="transistor" deviceset="BC337" device=""/>
 <part name="K2" library="relay" deviceset="JS-M1A*" device="" technology="-12V-5"/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
@@ -2402,29 +2405,32 @@ Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
-<instance part="GND1" gate="1" x="114.3" y="55.88"/>
-<instance part="R2" gate="G$1" x="99.06" y="66.04" rot="R180"/>
-<instance part="LED1" gate="G$1" x="101.6" y="93.98"/>
-<instance part="R4" gate="G$1" x="101.6" y="81.28" rot="R90"/>
-<instance part="D1" gate="G$1" x="114.3" y="88.9" smashed="yes" rot="R90">
-<attribute name="NAME" x="109.474" y="88.138" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="112.268" y="84.074" size="1.778" layer="96" rot="R90"/>
+<instance part="GND1" gate="1" x="114.3" y="60.96"/>
+<instance part="R2" gate="G$1" x="99.06" y="71.12" rot="R180"/>
+<instance part="LED1" gate="G$1" x="101.6" y="99.06"/>
+<instance part="R4" gate="G$1" x="101.6" y="86.36" rot="R90"/>
+<instance part="D1" gate="G$1" x="114.3" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="109.474" y="93.218" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="112.268" y="89.154" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R1" gate="G$1" x="106.68" y="58.42" rot="R270"/>
-<instance part="GND2" gate="1" x="76.2" y="58.42"/>
-<instance part="GND3" gate="1" x="106.68" y="48.26"/>
-<instance part="J2" gate="CON" x="160.02" y="76.2" rot="R270"/>
-<instance part="Q1" gate="1" x="111.76" y="66.04"/>
-<instance part="K1" gate="1" x="127" y="88.9" smashed="yes">
-<attribute name="VALUE" x="125.73" y="76.581" size="1.778" layer="96"/>
-<attribute name="PART" x="125.73" y="78.74" size="1.778" layer="95"/>
+<instance part="R1" gate="G$1" x="106.68" y="63.5" rot="R270"/>
+<instance part="GND2" gate="1" x="76.2" y="63.5"/>
+<instance part="GND3" gate="1" x="106.68" y="53.34"/>
+<instance part="J2" gate="CON" x="160.02" y="81.28" rot="R270"/>
+<instance part="Q1" gate="G$1" x="111.76" y="71.12" smashed="yes">
+<attribute name="NAME" x="116.84" y="71.12" size="1.778" layer="95"/>
+<attribute name="VALUE" x="116.84" y="68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="K1" gate="2" x="134.62" y="88.9" smashed="yes"/>
+<instance part="K1" gate="1" x="127" y="93.98" smashed="yes">
+<attribute name="VALUE" x="125.73" y="81.661" size="1.778" layer="96"/>
+<attribute name="PART" x="125.73" y="83.82" size="1.778" layer="95"/>
+</instance>
+<instance part="K1" gate="2" x="134.62" y="93.98" smashed="yes"/>
 <instance part="P+1" gate="VCC" x="76.2" y="142.24"/>
-<instance part="P+2" gate="VCC" x="101.6" y="101.6"/>
-<instance part="P+3" gate="VCC" x="114.3" y="99.06"/>
-<instance part="PCB1" gate="PCB" x="195.58" y="53.34"/>
-<instance part="J1" gate="CON" x="68.58" y="66.04" rot="R180"/>
+<instance part="P+2" gate="VCC" x="101.6" y="106.68"/>
+<instance part="P+3" gate="VCC" x="114.3" y="104.14"/>
+<instance part="PCB1" gate="PCB" x="157.48" y="58.42"/>
+<instance part="J1" gate="CON" x="68.58" y="71.12" rot="R180"/>
 <instance part="J3" gate="CON" x="68.58" y="132.08" rot="R180"/>
 <instance part="GND4" gate="1" x="114.3" y="124.46"/>
 <instance part="R3" gate="G$1" x="99.06" y="134.62" rot="R180"/>
@@ -2437,7 +2443,10 @@ Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
 <instance part="R6" gate="G$1" x="106.68" y="127" rot="R270"/>
 <instance part="GND6" gate="1" x="106.68" y="116.84"/>
 <instance part="J4" gate="CON" x="160.02" y="144.78" rot="R270"/>
-<instance part="Q2" gate="1" x="111.76" y="134.62"/>
+<instance part="Q2" gate="G$1" x="111.76" y="134.62" smashed="yes">
+<attribute name="NAME" x="116.84" y="134.62" size="1.778" layer="95"/>
+<attribute name="VALUE" x="116.84" y="132.08" size="1.778" layer="96"/>
+</instance>
 <instance part="K2" gate="1" x="127" y="157.48" smashed="yes">
 <attribute name="VALUE" x="125.73" y="145.161" size="1.778" layer="96"/>
 <attribute name="PART" x="125.73" y="147.32" size="1.778" layer="95"/>
@@ -2453,18 +2462,18 @@ Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="J1" gate="CON" pin="2"/>
-<wire x1="68.58" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="68.58" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="73.66" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="73.66" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="50.8" x2="106.68" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="55.88" x2="106.68" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="Q1" gate="1" pin="E"/>
-<wire x1="114.3" y1="58.42" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="E"/>
+<wire x1="114.3" y1="63.5" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="106.68" y1="119.38" x2="106.68" y2="121.92" width="0.1524" layer="91"/>
@@ -2473,32 +2482,32 @@ Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="Q2" gate="1" pin="E"/>
+<pinref part="Q2" gate="G$1" pin="E"/>
 <wire x1="114.3" y1="127" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="104.14" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="63.5" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="71.12" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="68.58" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="Q1" gate="1" pin="B"/>
-<wire x1="109.22" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
-<junction x="106.68" y="66.04"/>
+<pinref part="Q1" gate="G$1" pin="B"/>
+<wire x1="109.22" y1="71.12" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
+<junction x="106.68" y="71.12"/>
 </segment>
 </net>
 <net name="RELAY_A" class="0">
 <segment>
-<wire x1="93.98" y1="66.04" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
-<label x="81.28" y="66.04" size="1.778" layer="95"/>
+<wire x1="93.98" y1="71.12" x2="68.58" y2="71.12" width="0.1524" layer="91"/>
+<label x="81.28" y="71.12" size="1.778" layer="95"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="J1" gate="CON" pin="1"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<wire x1="101.6" y1="86.36" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="91.44" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
@@ -2514,7 +2523,7 @@ Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
 <label x="116.84" y="152.4" size="1.778" layer="95"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="Q2" gate="1" pin="C"/>
+<pinref part="Q2" gate="G$1" pin="C"/>
 <wire x1="114.3" y1="139.7" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
 <junction x="114.3" y="142.24"/>
 <pinref part="K2" gate="1" pin="2"/>
@@ -2551,17 +2560,17 @@ Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="101.6" y1="96.52" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="101.6" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="114.3" y1="91.44" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="93.98" x2="127" y2="93.98" width="0.1524" layer="91"/>
-<label x="116.84" y="93.98" size="1.778" layer="95"/>
+<wire x1="114.3" y1="96.52" x2="114.3" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="99.06" x2="127" y2="99.06" width="0.1524" layer="91"/>
+<label x="116.84" y="99.06" size="1.778" layer="95"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="K1" gate="1" pin="1"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="114.3" y1="93.98" x2="114.3" y2="96.52" width="0.1524" layer="91"/>
-<junction x="114.3" y="93.98"/>
+<wire x1="114.3" y1="99.06" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
+<junction x="114.3" y="99.06"/>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
@@ -2585,7 +2594,7 @@ Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
 <wire x1="106.68" y1="132.08" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="Q2" gate="1" pin="B"/>
+<pinref part="Q2" gate="G$1" pin="B"/>
 <wire x1="109.22" y1="134.62" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
 <junction x="106.68" y="134.62"/>
 </segment>
@@ -2607,40 +2616,40 @@ Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
 </net>
 <net name="LOAD_A1" class="0">
 <segment>
-<wire x1="142.24" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
-<label x="144.78" y="86.36" size="1.778" layer="95"/>
+<wire x1="142.24" y1="91.44" x2="160.02" y2="91.44" width="0.1524" layer="91"/>
+<label x="144.78" y="91.44" size="1.778" layer="95"/>
 <pinref part="K1" gate="2" pin="S"/>
-<wire x1="134.62" y1="93.98" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="93.98" x2="142.24" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="99.06" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="99.06" x2="142.24" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="J2" gate="CON" pin="1"/>
-<wire x1="160.02" y1="86.36" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="91.44" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LOAD_A2" class="0">
 <segment>
-<wire x1="134.62" y1="83.82" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
-<label x="144.78" y="83.82" size="1.778" layer="95"/>
+<wire x1="134.62" y1="88.9" x2="157.48" y2="88.9" width="0.1524" layer="91"/>
+<label x="144.78" y="88.9" size="1.778" layer="95"/>
 <pinref part="K1" gate="2" pin="P"/>
 <pinref part="J2" gate="CON" pin="2"/>
-<wire x1="157.48" y1="76.2" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="81.28" x2="157.48" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="COIL_A" class="0">
 <segment>
-<wire x1="114.3" y1="86.36" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="83.82" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="127" y1="83.82" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="73.66" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
-<junction x="114.3" y="83.82"/>
-<label x="116.84" y="83.82" size="1.778" layer="95"/>
+<wire x1="114.3" y1="91.44" x2="114.3" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="88.9" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="127" y1="88.9" x2="114.3" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="78.74" x2="101.6" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="78.74" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
+<junction x="114.3" y="88.9"/>
+<label x="116.84" y="88.9" size="1.778" layer="95"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="Q1" gate="1" pin="C"/>
-<wire x1="114.3" y1="71.12" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
-<junction x="114.3" y="73.66"/>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<wire x1="114.3" y1="76.2" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
+<junction x="114.3" y="78.74"/>
 <pinref part="K1" gate="1" pin="2"/>
-<wire x1="111.76" y1="91.44" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="96.52" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
