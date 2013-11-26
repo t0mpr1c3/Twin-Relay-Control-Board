@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -140,12 +140,12 @@
 <text x="40.483" y="16.161" size="1.016" layer="21" ratio="15" rot="R90">GND</text>
 <text x="40.513" y="31.271" size="1.016" layer="21" ratio="15" rot="R90">VCC</text>
 <text x="2.651" y="19.32" size="1.524" layer="21" ratio="15">LOAD A</text>
-<text x="8.223" y="0.754" size="1.524" layer="21" ratio="15">2 Relay Control PCB</text>
+<text x="9.223" y="0.754" size="1.524" layer="21" ratio="15">2 Relay Control</text>
 <text x="5.167" y="23.715" size="1.016" layer="21" ratio="15">Open</text>
 <text x="3.643" y="25.358" size="1.016" layer="21" ratio="15">Normally</text>
 <text x="40.483" y="21.073" size="1.016" layer="21" ratio="15" rot="R90">CTLA</text>
 <text x="16" y="4.5" size="1.016" layer="21" font="vector" ratio="15">Songle SRD</text>
-<text x="24.019" y="33.778" size="1.524" layer="22" ratio="15" rot="MR270">CC BY-SA 3.0</text>
+<text x="11.519" y="2.278" size="1.524" layer="22" ratio="15" rot="MR180">CC BY-SA 3.0</text>
 <text x="6.493" y="28.358" size="1.016" layer="22" ratio="15" rot="MR270">Normally</text>
 <text x="5.017" y="26.715" size="1.016" layer="22" ratio="15" rot="MR270">Open</text>
 <text x="41.019" y="8.168" size="1.524" layer="22" ratio="15" rot="MR90">Magic
@@ -157,7 +157,7 @@ RB02</text>
 <text x="16" y="27.5" size="1.016" layer="21" font="vector" ratio="15">Songle SRD</text>
 <text x="2.651" y="29.32" size="1.524" layer="21" ratio="15">LOAD B</text>
 <text x="3.651" y="17.82" size="1.524" layer="22" ratio="15" rot="MR270">LOAD A</text>
-<text x="3.651" y="40.82" size="1.524" layer="22" ratio="15" rot="MR270">LOAD B</text>
+<text x="21.901" y="20.82" size="1.524" layer="22" ratio="15" rot="MR90">DANGER</text>
 <text x="39.467" y="26.073" size="1.016" layer="22" ratio="15" rot="MR90">CTLB</text>
 <text x="40.483" y="26.073" size="1.016" layer="21" ratio="15" rot="R90">CTLB</text>
 <rectangle x1="14.2663" y1="37.2379" x2="19.8289" y2="37.2633" layer="22" rot="R270"/>
@@ -2728,7 +2728,7 @@ RB02</text>
 <rectangle x1="46.87945" y1="36.22285" x2="47.04455" y2="36.23555" layer="22" rot="R90"/>
 <rectangle x1="46.8858" y1="37.3722" x2="47.0382" y2="37.3849" layer="22" rot="R90"/>
 <rectangle x1="46.82865" y1="37.93735" x2="47.09535" y2="37.95005" layer="22" rot="R90"/>
-<text x="0" y="-0.0635" size="0.0254" layer="22" font="vector">/Users/thomasprice/Documents/eagle/logo/Magic_Smoke_logo.bmp</text>
+<text x="0" y="-0.0635" size="0.0254" layer="22" font="vector" ratio="15">/Users/thomasprice/Documents/eagle/logo/Magic_Smoke_logo.bmp</text>
 <rectangle x1="18.777384375" y1="37.082459375" x2="19.183784375" y2="37.107859375" layer="22" rot="R270"/>
 <rectangle x1="19.331753125" y1="37.645225" x2="19.636553125" y2="37.670625" layer="22" rot="R270"/>
 <rectangle x1="14.2663" y1="12.7379" x2="19.8289" y2="12.7633" layer="22" rot="R270"/>
@@ -3282,6 +3282,10 @@ RB02</text>
 <rectangle x1="21.9752" y1="12.6744" x2="22.1276" y2="12.6998" layer="22" rot="R270"/>
 <rectangle x1="18.777384375" y1="12.582459375" x2="19.183784375" y2="12.607859375" layer="22" rot="R270"/>
 <rectangle x1="19.331753125" y1="13.145225" x2="19.636553125" y2="13.170625" layer="22" rot="R270"/>
+<text x="17.151" y="17.32" size="1.524" layer="22" ratio="15" rot="MR90">HIGH VOLTAGE</text>
+<wire x1="29" y1="50" x2="29" y2="0" width="0.8128" layer="21" style="shortdash"/>
+<wire x1="29" y1="50" x2="29" y2="0" width="0.8128" layer="22" style="shortdash"/>
+<text x="3.651" y="40.82" size="1.524" layer="22" ratio="15" rot="MR270">LOAD B</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -3594,7 +3598,7 @@ Mfr no: 1776244-2 &lt;br&gt;
 &lt;/ul&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="JS-M1A">
+<package name="JS-M">
 <description>&lt;b&gt;Automotive Ultra-Miniature Power Relay&lt;/b&gt; NAiS&lt;p&gt;
 Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
 <wire x1="-10.9" y1="7.2904" x2="-10.2904" y2="7.9" width="0.2032" layer="21" curve="-90"/>
@@ -3609,6 +3613,7 @@ Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
 <pad name="1" x="6.7" y="6" drill="1.3" rot="R180"/>
 <pad name="2" x="6.7" y="-6" drill="1.3" rot="R180"/>
 <pad name="NO" x="-5.5" y="6" drill="1.3" rot="R180"/>
+<pad name="NC" x="-5.5" y="-6" drill="1.3" rot="R180"/>
 <text x="-8.89" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-8.89" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -3805,30 +3810,30 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="R2" library="SparkFun" package="AXIAL-0.3" value="1K" x="36" y="19.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="36.381" y="18.865" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="36.381" y="18.865" size="0.8128" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="LED1" library="SparkFun" package="LED5MM" value="" x="36" y="5" smashed="yes" rot="R180">
-<attribute name="NAME" x="33.206" y="3.7046" size="0.8128" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="NAME" x="33.206" y="3.7046" size="0.8128" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="32.7996" y="6.8034" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="R4" library="SparkFun" package="AXIAL-0.3" value="1K" x="31" y="9" smashed="yes" rot="R270">
-<attribute name="NAME" x="30.619" y="9.762" size="0.8128" layer="25" font="vector" rot="R270"/>
+<attribute name="NAME" x="30.619" y="9.762" size="0.8128" layer="25" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="D1" library="SparkFun" package="DIODE-1N4148" value="1N4148" x="31" y="19.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="31.381" y="18.865" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="31.381" y="18.865" size="0.8128" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="R1" library="SparkFun" package="AXIAL-0.3" value="10K" x="33.5" y="19.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="33.881" y="18.865" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="33.881" y="18.865" size="0.8128" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="J2" library="dp_devices" package="TERMINAL_BLOCK_2P_5" value="CON_TERMINAL_BLOCK_02-5MM" x="6.5" y="13.5" smashed="yes" rot="R270"/>
 <element name="Q1" library="transistor" package="TO92" value="BC337" x="36" y="11.5" smashed="yes">
-<attribute name="VALUE" x="38" y="9.5" size="0.8128" layer="27" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="38" y="9.5" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="K1" library="relay" package="JS-M1A" value="JS-M1A-12V-5" x="20" y="13.5" smashed="yes" rot="R90">
-<attribute name="OC_NEWARK" value="13P4555" x="20" y="13.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="JSM1A-12V-5" x="20" y="13.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="20" y="13.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="20" y="13.5" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="K1" library="relay" package="JS-M" value="JS-M1-12V-5" x="20" y="13.5" smashed="yes" rot="R90">
+<attribute name="OC_NEWARK" value="14J1764" x="20" y="13.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="JSM1-12V-5" x="20" y="13.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="FARNELL" x="20" y="13.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="910351" x="20" y="13.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="PCB1" library="dp_devices" package="DP5050_V1" value="PCB_DP_SQUARE-5X5" x="0" y="0">
 <attribute name="PCB_SIZE" value="DP5050_V1" x="0" y="0" size="1.778" layer="27" display="off"/>
@@ -3836,32 +3841,32 @@ design rules under a new name.</description>
 <element name="J1" library="dp_devices" package="TERMINAL_BLOCK_2P_5" value="CON_TERMINAL_BLOCK_02-5MM" x="44.5" y="20" smashed="yes" rot="R90"/>
 <element name="J3" library="dp_devices" package="TERMINAL_BLOCK_2P_5" value="CON_TERMINAL_BLOCK_02-5MM" x="44.5" y="30" smashed="yes" rot="R90"/>
 <element name="R3" library="SparkFun" package="AXIAL-0.3" value="1K" x="36" y="42.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="36.484" y="41.833" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="36.484" y="41.833" size="0.8128" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="LED2" library="SparkFun" package="LED5MM" value="" x="36" y="28" smashed="yes" rot="R180">
-<attribute name="NAME" x="33.206" y="26.8316" size="0.8128" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="NAME" x="33.206" y="26.8316" size="0.8128" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="32.7996" y="29.8034" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="R5" library="SparkFun" package="AXIAL-0.3" value="1K" x="31" y="32" smashed="yes" rot="R270">
-<attribute name="NAME" x="30.582" y="32.831" size="0.8128" layer="25" font="vector" rot="R270"/>
+<attribute name="NAME" x="30.582" y="32.831" size="0.8128" layer="25" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="D2" library="SparkFun" package="DIODE-1N4148" value="1N4148" x="31" y="42.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="31.357" y="41.841" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="31.357" y="41.841" size="0.8128" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="R6" library="SparkFun" package="AXIAL-0.3" value="10K" x="33.5" y="42.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="33.857" y="41.833" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="33.857" y="41.833" size="0.8128" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="J4" library="dp_devices" package="TERMINAL_BLOCK_2P_5" value="CON_TERMINAL_BLOCK_02-5MM" x="6.75" y="36.52" smashed="yes" rot="R270"/>
 <element name="Q2" library="transistor" package="TO92" value="BC337" x="36" y="34.5" smashed="yes">
-<attribute name="VALUE" x="38" y="32.5" size="0.8128" layer="27" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="38" y="32.5" size="0.8128" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="K2" library="relay" package="JS-M1A" value="JS-M1A-12V-5" x="20.1" y="36.49" smashed="yes" rot="R90">
-<attribute name="OC_NEWARK" value="13P4555" x="50.58" y="25.06" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="JSM1A-12V-5" x="50.58" y="25.06" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="50.58" y="25.06" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="50.58" y="25.06" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="K2" library="relay" package="JS-M" value="JS-M1-12V-5" x="20.1" y="36.49" smashed="yes" rot="R90">
+<attribute name="OC_NEWARK" value="14J1764" x="50.58" y="25.06" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="JSM1-12V-5" x="50.58" y="25.06" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="FARNELL" x="50.58" y="25.06" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="910351" x="50.58" y="25.06" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U$2" library="SparkFun" package="OSHW-LOGO-M" value="" x="27.5" y="25" rot="MR90"/>
+<element name="U$2" library="SparkFun" package="OSHW-LOGO-M" value="" x="20" y="6" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3934,31 +3939,32 @@ design rules under a new name.</description>
 <vertex x="7.746" y="38.97"/>
 <vertex x="9" y="41" curve="-60"/>
 <vertex x="9.1" y="41"/>
-<vertex x="15" y="41"/>
-<vertex x="16.5" y="42.5"/>
-<vertex x="16.5" y="45"/>
-<vertex x="18.5" y="47"/>
+<vertex x="15.5" y="41"/>
+<vertex x="16.5" y="42"/>
+<vertex x="16.5" y="46"/>
+<vertex x="17.5" y="47"/>
 <vertex x="21" y="47"/>
 <vertex x="22" y="46"/>
-<vertex x="22" y="41.5"/>
-<vertex x="18.272" y="37.764"/>
-<vertex x="17.772" y="37.2"/>
-<vertex x="9.001" y="37.256"/>
-<vertex x="8.755" y="37.827"/>
+<vertex x="22" y="38.5"/>
+<vertex x="21.25" y="37.75"/>
+<vertex x="9" y="37.75"/>
+<vertex x="8.5" y="38"/>
 </polygon>
 <polygon width="0.254" layer="1">
 <vertex x="7.746" y="38.97"/>
 <vertex x="9" y="41" curve="-60"/>
 <vertex x="9.1" y="41"/>
-<vertex x="15" y="41"/>
-<vertex x="16.5" y="42.5"/>
-<vertex x="16.5" y="45"/>
-<vertex x="18.5" y="47"/>
+<vertex x="15.5" y="41"/>
+<vertex x="16.5" y="42"/>
+<vertex x="16.5" y="46"/>
+<vertex x="17.5" y="47"/>
 <vertex x="21" y="47"/>
 <vertex x="22" y="46"/>
 <vertex x="22" y="41.5"/>
-<vertex x="17.772" y="37.2"/>
-<vertex x="9.001" y="37.256"/>
+<vertex x="21.95" y="38.45"/>
+<vertex x="21.25" y="37.75"/>
+<vertex x="9" y="37.75"/>
+<vertex x="9" y="38"/>
 <vertex x="8.755" y="37.827"/>
 </polygon>
 <wire x1="6.5" y1="39" x2="13" y2="39" width="2.54" layer="16"/>
@@ -3974,29 +3980,40 @@ design rules under a new name.</description>
 <wire x1="11.406" y1="34.081" x2="14.581" y2="30.906" width="2.54" layer="16"/>
 <contactref element="K2" pad="NO"/>
 <contactref element="J4" pad="1"/>
-<wire x1="6.3" y1="34.02" x2="11.07" y2="34.02" width="2.54" layer="1"/>
+<wire x1="6.3" y1="34.02" x2="6.73" y2="34.02" width="2.54" layer="1"/>
+<wire x1="6.73" y1="34.02" x2="8" y2="32.75" width="2.54" layer="1"/>
+<wire x1="8" y1="32.75" x2="7.75" y2="32.75" width="2.54" layer="1"/>
+<wire x1="7.75" y1="32.75" x2="6.5" y2="34" width="2.54" layer="1"/>
+<wire x1="6.5" y1="34" x2="8.5" y2="34" width="2.54" layer="1"/>
+<wire x1="8.5" y1="34" x2="8.5" y2="33" width="2.54" layer="1"/>
+<wire x1="8.5" y1="33" x2="9.52" y2="34.02" width="2.54" layer="1"/>
+<wire x1="9.52" y1="34.02" x2="11.07" y2="34.02" width="2.54" layer="1"/>
 <wire x1="11.07" y1="34.02" x2="14.1" y2="30.99" width="2.54" layer="1"/>
 <polygon width="0.254" layer="16">
-<vertex x="8.8" y="35.3"/>
-<vertex x="9.001" y="35.732"/>
-<vertex x="12.819" y="35.724"/>
-<vertex x="16" y="32.5"/>
+<vertex x="9.05" y="35.3"/>
+<vertex x="14.819" y="35.224"/>
+<vertex x="16" y="34"/>
 <vertex x="16" y="30"/>
 <vertex x="15" y="29"/>
-<vertex x="12" y="29"/>
-<vertex x="7.476" y="34.278"/>
+<vertex x="9" y="29"/>
+<vertex x="4.976" y="34.778"/>
 </polygon>
 <polygon width="0.254" layer="1">
-<vertex x="8.8" y="35.3"/>
-<vertex x="9.001" y="35.732"/>
-<vertex x="12.819" y="35.724"/>
-<vertex x="16" y="32.5"/>
+<vertex x="9.001" y="35.232"/>
+<vertex x="14.819" y="35.224"/>
+<vertex x="16" y="34"/>
 <vertex x="16" y="30"/>
 <vertex x="15" y="29"/>
-<vertex x="12" y="29"/>
-<vertex x="7.476" y="34.278"/>
+<vertex x="9" y="29"/>
+<vertex x="4.976" y="34.778"/>
 </polygon>
-<wire x1="6.5" y1="34" x2="11" y2="34" width="2.54" layer="16"/>
+<wire x1="6.5" y1="34" x2="9" y2="31.5" width="2.54" layer="16"/>
+<wire x1="9" y1="31.5" x2="8" y2="32.5" width="2.54" layer="16"/>
+<wire x1="8" y1="32.5" x2="8" y2="34" width="2.54" layer="16"/>
+<wire x1="8" y1="34" x2="8.5" y2="32" width="2.54" layer="16"/>
+<wire x1="8.5" y1="32" x2="8.5" y2="32.5" width="2.54" layer="16" curve="-60"/>
+<wire x1="8.5" y1="32.5" x2="10" y2="34" width="2.54" layer="16"/>
+<wire x1="10" y1="34" x2="11" y2="34" width="2.54" layer="16"/>
 <wire x1="11" y1="34" x2="14" y2="31" width="2.54" layer="16"/>
 </signal>
 <signal name="VCC">
@@ -4031,12 +4048,11 @@ design rules under a new name.</description>
 <wire x1="31" y1="23.31" x2="31" y2="23.5" width="0.4064" layer="1"/>
 <wire x1="31" y1="23.5" x2="28" y2="26.5" width="0.4064" layer="1"/>
 <wire x1="28" y1="26.5" x2="8" y2="26.5" width="0.4064" layer="1"/>
-<wire x1="8" y1="26.5" x2="2.5" y2="32" width="0.4064" layer="1"/>
-<wire x1="2.5" y1="32" x2="2.5" y2="41" width="0.4064" layer="1"/>
-<wire x1="2.5" y1="41" x2="3.5" y2="42" width="0.4064" layer="1"/>
-<wire x1="3.5" y1="42" x2="5.5" y2="42" width="0.4064" layer="1"/>
-<wire x1="5.5" y1="42" x2="6.69" y2="43.19" width="0.4064" layer="1"/>
-<wire x1="14.1" y1="43.19" x2="6.69" y2="43.19" width="0.4064" layer="1"/>
+<wire x1="8" y1="26.5" x2="2" y2="32.5" width="0.4064" layer="1"/>
+<wire x1="2" y1="32.5" x2="2" y2="41.5" width="0.4064" layer="1"/>
+<wire x1="2" y1="41.5" x2="3" y2="42.5" width="0.4064" layer="1"/>
+<wire x1="3" y1="42.5" x2="6.19" y2="43.19" width="0.4064" layer="1"/>
+<wire x1="14.1" y1="43.19" x2="6.19" y2="43.19" width="0.4064" layer="1"/>
 <wire x1="14" y1="20.2" x2="14" y2="20.5" width="0.4064" layer="1"/>
 <wire x1="14" y1="20.5" x2="8" y2="26.5" width="0.4064" layer="1"/>
 </signal>
@@ -4064,30 +4080,37 @@ design rules under a new name.</description>
 <signal name="LOAD_A1">
 <contactref element="K1" pad="NO"/>
 <contactref element="J2" pad="1"/>
-<wire x1="6.05" y1="11" x2="11" y2="11" width="2.54" layer="1"/>
-<wire x1="11" y1="11" x2="14" y2="8" width="2.54" layer="1"/>
+<wire x1="6.05" y1="11" x2="8.5" y2="11" width="2.54" layer="1"/>
+<wire x1="11" y1="11" x2="8.5" y2="11" width="2.54" layer="1"/>
+<wire x1="8.5" y1="11" x2="8" y2="10.5" width="2.54" layer="1"/>
+<wire x1="8" y1="10.5" x2="8" y2="10" width="2.54" layer="1"/>
+<wire x1="8" y1="10" x2="9" y2="9" width="2.54" layer="1"/>
+<wire x1="9" y1="9" x2="14" y2="8" width="2.54" layer="1"/>
 <polygon width="0.254" layer="1">
 <vertex x="8.8" y="12.3"/>
-<vertex x="9.001" y="12.732"/>
-<vertex x="12.819" y="12.724"/>
-<vertex x="16" y="9.5"/>
+<vertex x="14.819" y="12.224"/>
+<vertex x="16" y="11"/>
 <vertex x="16" y="7"/>
 <vertex x="15" y="6"/>
-<vertex x="12" y="6"/>
-<vertex x="7.476" y="11.278"/>
+<vertex x="9" y="6"/>
+<vertex x="7" y="9.5"/>
+<vertex x="5.976" y="10.524"/>
+<vertex x="5.976" y="11.278"/>
 </polygon>
 <polygon width="0.254" layer="16">
 <vertex x="8.8" y="12.3"/>
-<vertex x="9.001" y="12.732"/>
-<vertex x="12.819" y="12.724"/>
-<vertex x="16" y="9.5"/>
+<vertex x="14.819" y="12.224"/>
+<vertex x="16" y="11"/>
 <vertex x="16" y="7"/>
 <vertex x="15" y="6"/>
-<vertex x="12" y="6"/>
-<vertex x="7.476" y="11.278"/>
+<vertex x="9" y="6"/>
+<vertex x="5.976" y="11.278"/>
 </polygon>
 <wire x1="6" y1="11" x2="11" y2="11" width="2.54" layer="16"/>
-<wire x1="11" y1="11" x2="14" y2="8" width="2.54" layer="16"/>
+<wire x1="11" y1="11" x2="7.5" y2="11" width="2.54" layer="16"/>
+<wire x1="7.5" y1="11" x2="8.5" y2="9.5" width="2.54" layer="16"/>
+<wire x1="8.5" y1="9.5" x2="9" y2="9.5" width="2.54" layer="16"/>
+<wire x1="9" y1="9.5" x2="14" y2="8" width="2.54" layer="16"/>
 </signal>
 <signal name="LOAD_A2">
 <contactref element="K1" pad="C"/>
@@ -4100,31 +4123,28 @@ design rules under a new name.</description>
 <vertex x="7.746" y="15.97"/>
 <vertex x="9" y="18" curve="-60"/>
 <vertex x="9.1" y="18"/>
-<vertex x="15" y="18"/>
-<vertex x="16.5" y="19.5"/>
-<vertex x="16.5" y="22"/>
-<vertex x="18.5" y="24"/>
+<vertex x="15.5" y="18"/>
+<vertex x="16.5" y="19"/>
+<vertex x="16.5" y="23"/>
+<vertex x="17.5" y="24"/>
 <vertex x="21" y="24"/>
 <vertex x="22" y="23"/>
-<vertex x="22" y="18.5"/>
-<vertex x="17.772" y="14.2"/>
-<vertex x="9.001" y="14.256"/>
+<vertex x="22" y="16"/>
+<vertex x="21" y="14.75"/>
 <vertex x="8.755" y="14.827"/>
 </polygon>
 <polygon width="0.254" layer="16">
 <vertex x="7.746" y="15.97"/>
 <vertex x="9" y="18" curve="-60"/>
 <vertex x="9.1" y="18"/>
-<vertex x="15" y="18"/>
-<vertex x="16.5" y="19.5"/>
-<vertex x="16.5" y="22"/>
-<vertex x="18.5" y="24"/>
+<vertex x="15.5" y="18"/>
+<vertex x="16.5" y="19"/>
+<vertex x="16.5" y="23"/>
+<vertex x="17.5" y="24"/>
 <vertex x="21" y="24"/>
 <vertex x="22" y="23"/>
-<vertex x="22" y="18.5"/>
-<vertex x="18.272" y="14.764"/>
-<vertex x="17.772" y="14.2"/>
-<vertex x="9.001" y="14.256"/>
+<vertex x="22" y="16"/>
+<vertex x="21" y="14.75"/>
 <vertex x="8.755" y="14.827"/>
 </polygon>
 <wire x1="6.5" y1="16" x2="12.5" y2="16" width="2.54" layer="16"/>
